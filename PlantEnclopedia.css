@@ -1,0 +1,293 @@
+html{
+    scroll-behavior: smooth;
+    background-color: gray;
+  }
+  html, body {
+    background: gray;
+}
+  /* Hide the warning by default */
+.mobile-warning {
+    display: none;
+    position: fixed;
+    top: 0;
+    
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding-top: 50px;
+    z-index: 1000;
+  }
+  
+  /* Show the warning on screens less than 600px wide */
+  @media (max-width: 600px) {
+    .mobile-warning {
+      display: block;
+    }
+  
+    /* Hide other elements */
+    header, .welcome, .whatifarm, #footer {
+      display: none;
+    }
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #333; /* Add a bottom border*/
+    background-color: #026A1A; /* Gray background color */
+    height: 40px; /* Fixed height */ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .logo {
+    width: 250px; /* Adjust the width as needed */
+  }
+/* CSS for the plant encyclopedia */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray !important;
+    margin-top: 40px; /* Add a top margin equal to the height of the header */
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.logo {
+    width: 250px; /* Adjust the width as needed */
+}
+
+/* Style the page header */
+h1 {
+    background-color: #026A1A;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Style the plant container */ 
+.plant-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+/* Style each plant entry */
+.plant {
+    width: 250px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 20px;
+}
+
+.plant img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the plant name bar */
+.plant-name {
+    background-color: #026A1A;
+    color: white;
+    padding: 8px 0;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Show the plant name bar on hover */
+.plant:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.plant:hover .plant-name {
+    opacity: 1;
+}
+
+/* Style for the navigation links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allow links to grow and occupy the available space */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white ;
+    margin: 0 15px; /* Add horizontal spacing between the links */
+    text-decoration: none;
+      transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: rgb(0, 0, 0);
+  }
+  #navbar {
+    transition: top 0.3s ease;
+    position: fixed;
+    height: 60px;
+    top: -100px;
+    width: 100%;
+    
+  }
+  
+  #navbar.scrolled {
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+  }
+  
+  .profile-link {
+    float: right;
+    margin-right: 20px; /* Add spacing to the right of the profile link */
+    color: white;
+    text-decoration: none; /* Remove underlines */
+  }
+
+/* CSS for the main content AKA body*/
+.content {
+    padding: 20px;
+    margin-top: 80px; /* Match the header's height */
+    margin-bottom: 80px; /* Match the footer's height */
+    overflow-y: scroll; /* Enable vertical scroll if needed */
+    height: calc(100vh - 160px); /* Calculate the height based on viewport minus header and footer heights */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-top: 1px solid #333;
+    height: 50px;
+    height: 60px;
+  }
+  
+  .footer-logo {
+    width: 150px; /* Adjust the width as needed */
+    margin-left: 10px; /* Adjust the spacing between images */
+  }
+  
+  .footer-images {
+    display: flex;
+  }
+  
+  .footer-image {
+    width: 50px; /* Set the initial width */
+    height: 50px; /* Set the initial height */
+    margin-left: 10px; /* Add spacing between images */
+    transition: transform 0.3s, border 0.3s; /* Add smooth transition for transform and border */
+  }
+  #footer.hide {
+    display: none;
+  }
+  
+  /* Increase size, add border, and spin on hover */
+  .footer-image:hover {
+    transform: scale(1.5) rotate(360deg); /* Increase the size and add a 360-degree spin on hover */
+    transition: transform 0.3s, border 0.3s, rotate 0.3s; /* Add a smooth transition for the transformations */
+  }
+  #footer .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #footer .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #footer .footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  #footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .secoundfooter {
+      background-color: #333;
+      color: #fff;
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .secoundfooter a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  .secoundfooter a:hover {
+      color: #fff;
+      text-decoration: underline;
+  }
+  
+  .secoundfooter .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .secoundfooter .footer-section {
+      flex: 1;
+      margin-right: 20px;
+  }
+  
+  .secoundfooter .footer-section h4 {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+  }
+  
+  .secoundfooter .socials {
+      list-style: none;
+      padding: 0;
+      display: flex;
+  }
+  
+  .secoundfooter .socials li {
+      margin-right: 20px;
+  }
+  
+  .secoundfooter .socials i {
+      font-size: 1.8em;
+  }
+
+

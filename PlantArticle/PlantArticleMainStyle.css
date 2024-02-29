@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #989898;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+  
+    min-height: 100vh;
+ 
+}
+.welcometext {
+    color:#026A1A;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#article-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns the articles at the top */
+    min-height: 100vh;
+}
+
+
+#article-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%; /* Adjust this value as needed */
+    border-collapse: collapse;
+}
+
+#article-list th, #article-list td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#article-list a {
+    text-decoration: none;
+    color: #0079D3;
+}
+
+#article-list a:hover {
+    text-decoration: underline;
+}
+html{
+    scroll-behavior: smooth;
+  }
+  /* Hide the warning by default */
+  .mobile-warning {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding-top: 50px;
+    z-index: 1000;
+  }
+  
+  /* Show the warning on screens less than 600px wide */
+  @media (max-width: 600px) {
+    .mobile-warning {
+      display: block;
+    }
+  
+    /* Hide other elements */
+    header, .welcome, .whatifarm, #footer {
+      display: none;
+    }
+  }
+  
+  
+  /* CSS for the header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #333; /* Add a bottom border*/
+    background-color: #026A1A; /* Gray background color */
+    height: 40px; /* Fixed height */ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .logo {
+    width: 250px; /* Adjust the width as needed */
+  }
+  
+  /* Style for the navigation links */
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allow links to grow and occupy the available space */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white ;
+    margin: 0 15px; /* Add horizontal spacing between the links */
+    text-decoration: none;
+      transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: rgb(0, 0, 0);
+  }
+  #navbar {
+    transition: top 0.3s ease;
+    position: fixed;
+    height: 60px;
+    top: 0;
+    width: 100%;
+  }
+  
+  #navbar.scrolled {
+    top: 0;
+  }
+  
+  .profile-link {
+    float: right;
+    margin-right: 20px; /* Add spacing to the right of the profile link */
+    color: white;
+    text-decoration: none; /* Remove underlines */
+  }
+  
+  /* CSS for the main content AKA body*/
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  
+  /* CSS for the footer */
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-top: 1px solid #333;
+    height: 50px;
+    height: 60px;
+  }
+  
+  .footer-logo {
+    width: 150px; /* Adjust the width as needed */
+    margin-left: 10px; /* Adjust the spacing between images */
+  }
+  
+  .footer-images {
+    display: flex;
+  }
+  
+  .footer-image {
+    width: 50px; /* Set the initial width */
+    height: 50px; /* Set the initial height */
+    margin-left: 10px; /* Add spacing between images */
+    transition: transform 0.3s, border 0.3s; /* Add smooth transition for transform and border */
+  }
+  #footer.hide {
+    display: none;
+  }
+  
+  /* Increase size, add border, and spin on hover */
+  .footer-image:hover {
+    transform: scale(1.5) rotate(360deg); /* Increase the size and add a 360-degree spin on hover */
+    transition: transform 0.3s, border 0.3s, rotate 0.3s; /* Add a smooth transition for the transformations */
+  }
+  #footer .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #footer .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #footer .footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  #footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .secoundfooter {
+      background-color: #333;
+      color: #fff;
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .secoundfooter a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  .secoundfooter a:hover {
+      color: #fff;
+      text-decoration: underline;
+  }
+  
+  .secoundfooter .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .secoundfooter .footer-section {
+      flex: 1;
+      margin-right: 20px;
+  }
+  
+  .secoundfooter .footer-section h4 {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+  }
+  
+  .secoundfooter .socials {
+      list-style: none;
+      padding: 0;
+      display: flex;
+  }
+  
+  .secoundfooter .socials li {
+      margin-right: 20px;
+  }
+  
+  .secoundfooter .socials i {
+      font-size: 1.8em;
+  }

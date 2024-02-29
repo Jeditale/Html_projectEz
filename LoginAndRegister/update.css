@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.update-profile {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.update-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.update-profile .inputBox {
+    margin-bottom: 20px;
+}
+.update-profile .inputBox span {
+    display: block;
+    margin-bottom: 5px;
+}
+.update-profile .inputBox input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.update-profile .btn, .update-profile .delete-btn {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #026A1A;
+}
+.update-profile .delete-btn {
+    background-color: #ff0000;
+}

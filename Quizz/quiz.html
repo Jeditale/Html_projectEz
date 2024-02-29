@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Farming Quiz</title>
+    <link href="quiz.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header id="navbar">
+        <a href="../Index.html"><img class="logo" src="../Pictures/Icons/IFarm.png" alt="My Smartfarm Logo"></a>
+        <nav class="nav-links">
+            <a href="../Weather/Weather.html" >Weather</a>
+            <a href="../PlantArticle/PlantArticleMain.php" >Planting Article</a>
+            <a href="../Quizz/quiz.html" >Planting Recommendation</a>
+            <a href="../PlantEnclopedia.html" >Plant Bibliography</a>
+        </nav>
+        <a class="profile-link" href="../LoginAndRegister/login.php">Login</a>
+    </header>
+
+    <main>
+    <h1 class="Welcometext">ปลูกอะไรดี?</h1>
+    <form action="quiz.php" method="post">
+        <ul>
+            <h2>1. สภาพอากาศ?</h2>
+            <img class="quiz-image" src="imgQuiz/weather.png" alt="weather"><br>
+            <select name="Question1">
+                <option value="ร้อน">ร้อน</option>
+                <option value="หนาว">หนาว</option>
+                <option value="ฝน">ฝน</option>
+            </select>
+
+            <h2>2. สภาพดิน?</h2>
+            <img class="quiz-image" src="imgQuiz/ground.jpg" alt="weather"><br>
+            <select name="Question2">
+                <option value="ดินเหนียว">ดินเหนียว</option>
+                <option value="ดินร่วน">ดินร่วน</option>
+                <option value="ดินทราย">ดินทราย</option>
+            </select>
+
+            <h2>3. ระยะเวลา?</h2>
+            <img class="quiz-image" src="imgQuiz/time.jpg" alt="time"><br>
+            <select name="Question3">
+                <option value="น้อยกว่า 1 เดือน">น้อยกว่า 1 เดือน</option>
+                <option value="1-3 เดือน">1-3 เดือน</option>
+                <option value="4 เดือนขี้นไป">4 เดือนขึ้นไป</option>
+            </select>
+
+            <h2>4. ขนาดพื้นที่?</h2>
+            <img class="quiz-image" src="imgQuiz/area.jpg" alt="area"><br>
+            <select name="Question4">
+                <option value="เล็ก">เล็ก</option>
+                <option value="กลาง">กลาง</option>
+                <option value="ใหญ่">ใหญ่</option>
+            </select>
+
+            <h2>5. ความยากในการปลูก?</h2>
+            <img class="quiz-image" src="imgQuiz/plant.jpg" alt="plant"><br>
+            <select name="Question5">
+                <option value="ง่าย">ง่าย</option>
+                <option value="กลาง">กลาง</option>
+                <option value="ยาก">ยาก</option>
+            </select><br>
+            <br><button id="submit">ยืนยัน</button>
+        </ul>
+    </form>
+    </main>
+    <div class="secoundfooter">
+        <div class="footer-content">
+          <div class="footer-section">
+              <h4>IFARM</h4>
+              <p>© 2024 IFARM. All rights reserved.</p>
+              <p>Tel: 092-661-4519</p>
+          </div>
+          <div class="footer-section">
+              <h4>Follow us</h4>
+              <ul class="socials">
+                  <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+          </div>
+      </div>
+    </div>
+    
+    <div class="mobile-warning">Please use a PC to view this page.</div>
+    <script src="quizzJS.js"></script>
+</body>
+
+</html>

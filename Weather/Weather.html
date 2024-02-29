@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Page - Farm IoT</title>
+    <link rel="stylesheet" href="WeatherStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header id="navbar">
+        <a href="../Index.html"><img class="logo" src="../Pictures/Icons/IFarm.png" alt="My Smartfarm Logo"></a>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <nav class="nav-links">
+            <a href="../Weather/Weather.html" >Weather</a>
+            <a href="../PlantArticle/PlantArticleMain.php" >Planting Article</a>
+            <a href="../Quizz/quiz.html" >Planting Recommendation</a>
+            <a href="../PlantEnclopedia.html" >Plant Bibliography</a>
+        </nav>
+        <a class="profile-link" href="./LoginAndRegister/login.php">Login</a>
+    </header>
+    <div>
+    <div class="container">
+        <div class="panel temperature">
+            <div>
+                <a class="weatherwidget-io" href="https://forecast7.com/en/18d7198d98/chiang-mai/" data-label_1="CHIANG MAI" data-label_2="WEATHER" data-font="Arial Black" data-icons="Climacons Animated" data-theme="blue-mountains">CHIANG MAI WEATHER</a>
+                <script>
+                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+              </div>
+        </div>
+        <div class="panel map">
+            
+            <div class="chart mt-8">
+                <iframe width="1080" height="500" src="https://embed.windy.com/embed2.html?lat=18.323&lon=98.443&detailLat=18.790&detailLon=98.990&width=840&height=550&zoom=8&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=m%2Fs&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
+              </div>
+        </div>
+        <div class="panel pump-container">
+            
+            <!-- Pump details go here -->
+            
+            <div class="pump">
+                <h3>Pump 1</h3>
+                <p>Status:<span class="status">Off</span></p>
+                <span class="status-indicator"></span> <!-- This is the indicator dot -->
+                <p>Turn On Time: <input type="time" class="on-time"></p>
+                <p>Turn Off Time: <input type="time" class="off-time"></p>
+                <p>Use Timer: <input type="checkbox" class="use-timer"></p>
+                <button class="toggle-pump">Toggle Pump</button>
+            </div>
+            <div class="pump">
+                <h3>Pump 2</h3>
+                <p>Status:<span class="status">Off</span></p>
+                <span class="status-indicator"></span> <!-- This is the indicator dot -->
+                <p>Turn On Time: <input type="time" class="on-time"></p>
+                <p>Turn Off Time: <input type="time" class="off-time"></p>
+                <p>Use Timer: <input type="checkbox" class="use-timer"></p>
+                <button class="toggle-pump">Toggle Pump</button>
+            </div>
+            <div class="pump">
+                <h3>Pump 3</h3>
+                <p>Status:<span class="status">Off</span></p>
+                <span class="status-indicator"></span> <!-- This is the indicator dot -->
+                <p>Turn On Time: <input type="time" class="on-time"></p>
+                <p>Turn Off Time: <input type="time" class="off-time"></p>
+                <p>Use Timer: <input type="checkbox" class="use-timer"></p>
+                <button class="toggle-pump">Toggle Pump</button>
+            </div>
+            <div class="pump">
+                <h3>Pump 3</h3>
+                <p>Status:<span class="status">Off</span></p>
+                <span class="status-indicator"></span> <!-- This is the indicator dot -->
+                <p>Turn On Time: <input type="time" class="on-time"></p>
+                <p>Turn Off Time: <input type="time" class="off-time"></p>
+                <p>Use Timer: <input type="checkbox" class="use-timer"></p>
+                <button class="toggle-pump">Toggle Pump</button>
+            </div>
+            <div class="pump">
+                <h3>Pump 4</h3>
+                <p>Status:<span class="status">Off</span></p>
+                <span class="status-indicator"></span> <!-- This is the indicator dot -->
+                <p>Turn On Time: <input type="time" class="on-time"></p>
+                <p>Turn Off Time: <input type="time" class="off-time"></p>
+                <p>Use Timer: <input type="checkbox" class="use-timer"></p>
+                <button class="toggle-pump">Toggle Pump</button>
+            </div>
+            
+            <!-- Repeat for other pumps -->
+        
+        </div>
+        </div>
+        <div class="secoundfooter">
+            <div class="footer-content">
+              <div class="footer-section">
+                  <h4>IFARM</h4>
+                  <p>c 2024 IFARM. All rights reserved.</p>
+                  <p>Tel: 092-661-4519</p>
+              </div>
+              <div class="footer-section">
+                  <h4>Follow us</h4>
+                  <ul class="socials">
+                      <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <div class="mobile-warning">Please use a PC to view this page.</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="WeatherJS.js"></script>
+</body>
+</html>

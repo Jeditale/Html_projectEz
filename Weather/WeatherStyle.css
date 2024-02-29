@@ -1,0 +1,202 @@
+html{
+    scroll-behavior: smooth;
+  }
+  /* Hide the warning by default */
+  .mobile-warning {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding-top: 50px;
+    z-index: 1000;
+  }
+  
+  /* Show the warning on screens less than 600px wide */
+  @media (max-width: 600px) {
+    .mobile-warning {
+      display: block;
+    }
+  
+    /* Hide other elements */
+    header,#footer {
+      display: none;
+    }
+  }
+  /* CSS for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #333; /* Add a bottom border*/
+    background-color: #026A1A; /* Gray background color */
+    height: 40px; /* Fixed height */ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .logo {
+    width: 250px; /* Adjust the width as needed */
+  }
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 0px; /* Adjust as needed */
+    width: 100%;
+    height: 1200px;
+    box-sizing: border-box;
+}
+
+.panel {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 80%; /* Adjust as needed */
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(135, 135, 135);
+}
+/* Style for the navigation links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allow links to grow and occupy the available space */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white ;
+    margin: 0 15px; /* Add horizontal spacing between the links */
+    text-decoration: none;
+      transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: rgb(0, 0, 0);
+  }
+  #navbar {
+    transition: top 0.3s ease;
+    position: fixed;
+    height: 60px;
+    top: -100px;
+    width: 100%;
+  }
+  
+  #navbar.scrolled {
+    top: 0;
+    z-index: 999; /* Any number larger than the z-index of the temperature panel */
+  }
+  
+  .profile-link {
+    float: right;
+    margin-right: 20px; /* Add spacing to the right of the profile link */
+    color: white;
+    text-decoration: none; /* Remove underlines */
+  }
+  
+  /* CSS for the main content AKA body*/
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+
+.panel.map iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.pump-controller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pump-container {
+    display: flex;
+    flex-wrap: wrap; /* This will allow the pumps to wrap to the next line if the container width is not enough */
+    justify-content: space-between; /* This will add space between the pumps */
+}
+.pump {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    width: auto;
+}
+.status-indicator {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red; /* Default color */
+}
+
+.secoundfooter {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secoundfooter a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.secoundfooter a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.secoundfooter .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secoundfooter .footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.secoundfooter .footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.secoundfooter .socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.secoundfooter .socials li {
+    margin-right: 20px;
+}
+
+.secoundfooter .socials i {
+    font-size: 1.8em;
+}

@@ -1,0 +1,10 @@
+Create Db name articles
+
+
+Crate table name articles 4 columns
+columns 
+NAME            TYPE                    COLLATION                      EXTRA
+id              int(11)                                                  AUTO_INCREMENT    
+title           varchar(100)            utf8mb4_general_ci	            
+content         long text               utf8mb4_general_ci	                            
+date            date                                                   
