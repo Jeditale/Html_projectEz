@@ -256,17 +256,7 @@ body {
 </head>
 
 <body>
-<header id="navbar">
-        <a href="./Index.html"><img class="logo" src="../Pictures/Icons/IFarm.png" alt="My Smartfarm Logo"></a>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <nav class="nav-links">
-            <a href="" >Weather</a>
-            <a href="" >Planting Article</a>
-            <a href="" >Planting Recommendation</a>
-            <a href="./PlantEnclopedia.html" >Plant Bibliography</a>
-        </nav>
-        <a class="profile-link" href="./LoginAndRegister/login.php">Login</a>
-    </header>
+
 
     <?php
     $Question1 = $_POST["Question1"];
@@ -628,8 +618,9 @@ body {
     ?>
     </div>
     <br><br>
-    <form method="post" action="quiz.html">
-        <input type="submit" name="submit_button" value="ทำอีกครั้ง">
+    <form method="post" action="../Index.html">
+        <input type="submit" name="submit_button" value="กลับไปหน้าหลัก">
+        
     </form>
     <script>
 window.onload = function() {

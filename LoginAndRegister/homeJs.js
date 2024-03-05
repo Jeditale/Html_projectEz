@@ -16,15 +16,15 @@ window.addEventListener('scroll', function() {// show header when scrowing down
     }
   });
   window.onload = function() {
-    fetch('.ใ/LoginAndRegister/loginstatus.php')
+    fetch('loginstatus.php')
         .then(response => response.json())
         .then(data => {
             var profileLink = document.querySelector('.profile-link');
             if (data.loggedIn) {
-                profileLink.href = '.ใ/LoginAndRegister/home.php';
+                profileLink.href = '';
                 profileLink.textContent = 'Profile';
             } else {
-                profileLink.href = '.ใ/LoginAndRegister/login.php';
+                profileLink.href = 'login.php';
                 profileLink.textContent = 'Login';
             }
         });

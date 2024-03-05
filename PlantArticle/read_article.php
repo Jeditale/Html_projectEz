@@ -81,7 +81,7 @@
   
   <div class="mobile-warning">Please use a PC to view this page.</div>
     </div>
-    
+
     <footer id="footer">
         <img class="footer-logo" src="../Pictures/Icons/IFarm.png" alt="My Smartfarm Logo">
         <div class="footer-images">

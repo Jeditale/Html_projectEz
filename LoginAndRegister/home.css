@@ -70,7 +70,7 @@ html{
     transition: top 0.3s ease;
     position: fixed;
     height: 60px;
-    top: -100px;
+    top: 0;
     width: 100%;
   }
   

@@ -73,7 +73,7 @@ $conn->close();
         </nav>
         <a class="profile-link" href="../LoginAndRegister/login.php">Login</a>
     </header>
-    
+    <div style="padding: 20px;">
     <h1 class="welcometext">Welcome to Plant Articles</h1>
     
     
@@ -131,7 +131,7 @@ $conn->close();
     </form>
 </div>
 </div>
-
+</div>
     
     
     <div class="secoundfooter">
